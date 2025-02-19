@@ -1,0 +1,96 @@
+/* src/styles/custom.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.welcome_screen {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6.5rem;
+    margin: 3rem auto;
+}
+
+.welcome_text {
+    position: relative;
+    max-width: 52rem;
+}
+
+.welcome_search {
+    height: 3.75rem;
+    max-width: 24rem;
+}
+
+.welcome_image {
+    width: 450px;
+    max-width: 50rem;
+}
+.ingredient_grid {
+    display: flex;
+    max-width: 111rem;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 2.25rem;
+
+    .ingredient_cards {
+        justify-content: center;
+    }
+    .ingredient_filters{
+        padding-left: 5.6rem;
+    }
+}
+.product_grid {
+    display: flex;
+    max-width: 111rem;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 2.25rem;
+
+    .product_cards {
+        justify-content: center;
+    }
+    .product_filters{
+        padding-left: 5.6rem;
+    }
+}
+
+@media (max-width: 1411px) {
+    .product_grid .product_filters {
+        padding-left: 0.2rem;
+    }
+    .ingredient_grid .ingredient_filters {
+        padding-left: 0.2rem;
+    }
+}
+@media (max-width: 1194px) {
+    .welcome_search {
+        max-width: 54rem;
+    }
+    .product_grid .product_filters {
+        padding-left: 0.2rem;
+    }
+    .ingredient_grid .ingredient_filters {
+        padding-left: 0.2rem;
+    }
+}
+@media (max-width: 919px) {
+    .product_grid {
+        gap: 0.2rem;
+    }
+    .ingredient_grid {
+        gap: 0.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome_screen {
+        max-width: 90vw;
+        margin: 0 auto 3rem;
+    }
+    .product_grid {
+        flex-wrap: wrap;
+    }
+}

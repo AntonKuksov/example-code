@@ -1,0 +1,52 @@
+/*@import '../dist/assets/index.css';*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    max-width: 100vw
+}
+
+h1 {
+    line-height: 4.5rem;
+    font-size: 3rem;
+    letter-spacing: -.025em;
+    margin: 1rem 0;
+}
+
+h2 {
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    letter-spacing: -.01em;
+}
+
+h3 {
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+
+header {
+    max-width: 100vw !important;
+}
+
+.after\:bg-primary::after {
+    background-color: hsl(var(--nextui-primary-200) / var(--nextui-primary-opacity, var(--tw-bg-opacity))) !important;
+    border: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.p-galleria .p-galleria-thumbnail-container {
+    background: transparent;
+}

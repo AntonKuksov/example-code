@@ -1,0 +1,15 @@
+{
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "importOrder": [
+    "^react$",
+    "^(?!.*\\.css$|react)\\w",
+    "^(?!.*\\.css$)\\.\\.",
+    "^(?!.*\\.css$)\\.",
+    "[.css]$"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
+}
